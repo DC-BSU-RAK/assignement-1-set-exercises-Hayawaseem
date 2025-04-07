@@ -83,22 +83,22 @@ p {
     font-size: 20.8px;
 }
 
-/* Button Styling */
+/*Button styling*/
 .button {
     display: inline-block;
-    padding: 16px 32px;
-    margin-top: 40px;
-    background: linear-gradient(135deg, #f7e193, #f2a87d);
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FF6F91, #FF9671);
     color: white;
     text-decoration: none;
-    border-radius: 20px;
-    font-weight: 800;
-    transition: background 0.5s transform 0.4s box-shadow 0.5s;
-    box-shadow: 0 12px 25px rgba(250, 217, 97, 0.4);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(255, 111, 145, 0.4)
 }
-
-.button:hover {
-    background: linear-gradient(135deg, #FF9A8B, #FF6F91);
-    transform: scale(1.2) rotate(-4deg);
-    box-shadow: 0 15px 30px rgba(255, 154, 139, 0.6);
+.button:hover{
+    background-color: linear-gradient(135deg, #FF9671, #FF6F91);
+    box-shadow: 0 12px 35px rgba(255, 111, 145, 0.6);
+    cursor: pointer;
+    
 }
