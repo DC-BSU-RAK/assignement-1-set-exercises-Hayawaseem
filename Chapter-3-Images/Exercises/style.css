@@ -1,0 +1,113 @@
+/* -------------------------------
+   Header Bar Styling
+--------------------------------*/
+.header-bar {
+    background-color: #4682b4; /* soft blue background */
+    color: white; 
+    text-align: center; 
+    padding: 25px 0; /* vertical spacing inside header */
+    font-size: 2.5em; /* large text */
+    font-weight: bold; /* bold font */
+    letter-spacing: 1px; /* space between letters */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+    margin-bottom: 40px; /* space below header */
+    border-top: 6px solid #2e5984; 
+    border-bottom: 6px solid #2e5984; 
+    position: relative; 
+  }
+  
+  /* Decorative white line across bottom of header */
+  .header-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    width: 40%; /* white line spans 40% of the header */
+    height: 4px;
+    background-color: white;
+    opacity: 0.3;
+    border-radius: 2px;
+  }
+  
+  
+  /* Body Styling*/
+  body {
+    font-family: Arial, sans-serif; /* clean font */
+    background-color: #f0f8ff; /* light blue background */
+    padding: 20px;
+    margin: 0;
+  }
+  
+  
+  /*Image Row Layout*/
+  .image-row {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  
+  /* Image Container Styling*/
+  .image-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    transition: transform 0.3s ease; 
+  }
+  
+  
+  /* Image Styling and Animation*/
+  img {
+    max-width: 300px; 
+    height: auto; 
+    border-radius: 8px; /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* image shadow */
+    transition: filter 0.3s ease, transform 0.3s ease; /* smooth hover effects */
+  }
+  
+  
+  /* Individual Image Filters*/
+  
+  /* Mountain: slightly bright and contrast */
+  .mountain {
+    filter: contrast(1.1) brightness(1.05);
+  }
+  
+  /* On hover: more vibrant and a little zoom */
+  .mountain:hover {
+    filter: contrast(1.3) brightness(1.2) saturate(1.1);
+    transform: scale(1.05);
+  }
+  
+  /* Forest: grayscale with boosted colors */
+  .forest {
+    filter: grayscale(40%) saturate(1.3);
+  }
+  
+  /* On hover: reduced grayscale and brighter */
+  .forest:hover {
+    filter: grayscale(20%) saturate(1.6) brightness(1.1);
+    transform: scale(1.05);
+  }
+  
+  /* Beach: soft vintage effect */
+  .beach {
+    filter: sepia(0.2) hue-rotate(-10deg) brightness(1.1);
+  }
+  
+  /* On hover: richer colors and contrast */
+  .beach:hover {
+    filter: sepia(0.4) hue-rotate(-5deg) contrast(1.1);
+    transform: scale(1.05);
+  }
+  
+  
+  /* License/Attribution Text*/
+  .license {
+    font-size: 0.9em; /* slightly smaller text */
+    color: #555; /* medium gray */
+    margin-top: 8px; /* space above the text */
+  }
+  
