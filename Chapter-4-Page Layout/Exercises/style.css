@@ -1,0 +1,78 @@
+/* Header styles */
+.header {
+    background-color: #17072b;
+    text-align: center;
+    padding: 30px;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+/* Heading 2 styles */
+h2 {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Heading 1 styles */
+h1 {
+    color: white;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+/* Body default font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+}
+
+/* Styles for header links (navigation) */
+.header a {
+    color: white;
+    font-size: 25px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #8c15e9;
+    color: white;
+    width: 100%;
+    height: 38px;
+    justify-content: center;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+}
+
+/* Box on the right side ("Line Up") */
+.Box {
+    background-color: #172d67;
+    color: white;
+    width: 35%;
+    padding: 20px;
+    height: 406px;
+    margin-top: 17px;
+}
+
+/* Flex container to arrange text and box side by side */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Text section (left side) */
+.text {
+    width: 65%;
+    padding: 17px;
+    padding-left: 15px;
+}
+
+/* Picture gallery inside the "Line Up" box */
+.picture {
+    gap: 10px; /* Reduced gap for closer images */
+    display: flex;
+    margin-top: 29px;
+}
