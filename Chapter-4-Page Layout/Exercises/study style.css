@@ -1,0 +1,90 @@
+/* Reset margin and padding */
+body, h1, h2, p, ul, li, nav, header, footer, main, section {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base box sizing */
+body, header, nav, main, section, footer, button, img {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #145374;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* Navigation */
+nav {
+  background-color: #00334e;
+  padding: 12px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Layout */
+main {
+  padding: 30px;
+}
+
+/* Top Row: Two Columns */
+.top-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px; /* Space before footer */
+}
+
+/* Column Boxes */
+.column {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+/* Button Style */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #28a7b8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #145374;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
