@@ -4,37 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petrol Calculator</title>
+    
+    <!-- Link to an external CSS file for styling -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
+    <!-- Main heading of the page -->
     <h1>Petrol Calculator</h1>
+
+    <!-- Main container for the calculator content -->
     <div class="container">
-      <div class="petrol_calculator">
-        <p>Cost of petrol per litre</p>
-        <input id="Petrol_price" placeholder="0" type="number">
-        <p>Enter liters purchased</p>
-        <input id="Petrol_liter" placeholder="0" type="number">
-        <div class="button">
-        <button class="btn" onclick="Calculate()">Calculate</button>
+        <div class="petrol_calculator">
+            
+            <!-- Label for the petrol price input -->
+            <p>Cost of petrol per litre</p>
+            <!-- Input field for petrol price per liter -->
+            <input id="Petrol_price" placeholder="0" type="number">
+
+            <!-- Label for the liters purchased input -->
+            <p>Enter liters purchased</p>
+            <!-- Input field for number of liters -->
+            <input id="Petrol_liter" placeholder="0" type="number">
+
+            <!-- Button to trigger the calculation -->
+            <div class="button">
+                <button class="btn" onclick="Calculate()">Calculate</button>
+            </div>
+
+            <!-- Label and placeholder for displaying total cost -->
+            <p>Total cost:</p>
+            <p id="Total_price"></p>
         </div>
-        <p>Total cost:</p>
-        <p id="Total_price"></p>
     </div>
     
+    <!-- JavaScript section for the calculation logic -->
     <script>
     function Calculate () {
+        // Get the values entered by the user and store them
         const Petrol_price = document.getElementById('Petrol_price').value;
-        const Petrol_liter= document.getElementById('Petrol_liter').value;
-    
+        const Petrol_liter = document.getElementById('Petrol_liter').value;
+
+        // If either value is missing, show 0 as the total
         if (!Petrol_price || !Petrol_liter) {
             document.getElementById('Total_price').innerText = Petrol_price * Petrol_liter;
             return;
         }
-    
+
+        // Calculate the total cost by multiplying price and liters
         const totalCost = Petrol_price * Petrol_liter;
+
+        // Display the result with two decimal places
         document.getElementById('Total_price').innerText = totalCost.toFixed(2);
     }
     </script>
-    
+
 </body>
 </html>
