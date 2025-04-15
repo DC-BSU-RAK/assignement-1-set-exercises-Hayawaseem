@@ -1,0 +1,85 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fc466b, #3f5efb); /* Pink to Blue Gradient */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main Game Container */
+  .game-container {
+    text-align: center;
+    background-color: #1b1b2f;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 350px;
+  }
+  
+  /* RGB Value Display */
+  #rgb-display {
+    font-size: 26px;
+    margin: 20px 0;
+    color: #fce38a;
+  }
+  
+  /* Message Box */
+  #message {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Option Buttons */
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .options button {
+    width: 90px;
+    height: 90px;
+    border: 3px solid white;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.2s, border-color 0.3s;
+  }
+  
+  .options button:hover {
+    transform: scale(1.1);
+    border-color: #fce38a;
+  }
+  
+  /* Score and Lives Info */
+  .info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #f38181;
+  }
+  
+  /* Restart Button */
+  #restart {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fce38a;
+    color: #1b1b2f;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  #restart:hover {
+    background-color: #f38181;
+    color: white;
+  }  
