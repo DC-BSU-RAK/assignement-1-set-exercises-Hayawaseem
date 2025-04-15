@@ -1,0 +1,60 @@
+/* --- Set new petrol-themed background image for the entire page --- */
+body {
+    background-image: url('https://plus.unsplash.com/premium_photo-1741092536095-643bd4de6e37?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGV0cm9sJTIwc3RhdGlvbiUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D'); /* Modern petrol station image */
+    background-size: cover;          
+    background-position: center;     
+    font-family: Arial, sans-serif;  
+    color: #c0ffb3;                 
+    margin: 0;
+}
+
+/* --- Center the calculator in the viewport --- */
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Petrol calculator box styling --- */
+.petrol_calculator {
+    background-color: rgba(20, 20, 20, 0.95); 
+    padding: 40px;
+    width: 400px;
+    border: 2px solid #c0ffb3;  /* Neon green border */
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.3); /* Glowing effect */
+}
+
+/* --- Heading style --- */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffe600; 
+}
+
+/* --- Content layout inside the calculator --- */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Button style --- */
+.btn {
+    padding: 10px 16px;
+    margin-top: 14px;
+    background-color: #ffe600; /* Yellow fuel indicator color */
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* --- Button hover effect --- */
+.btn:hover {
+    background-color: #c0ffb3; /* Neon green hover */
+    color: #111;
+}
