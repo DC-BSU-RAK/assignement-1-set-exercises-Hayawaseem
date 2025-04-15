@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petrol Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <h1>Petrol Calculator</h1>
+    <div class="container">
+      <div class="petrol_calculator">
+        <p>Cost of petrol per litre</p>
+        <input id="Petrol_price" placeholder="0" type="number">
+        <p>Enter liters purchased</p>
+        <input id="Petrol_liter" placeholder="0" type="number">
+        <div class="button">
+        <button class="btn" onclick="Calculate()">Calculate</button>
+        </div>
+        <p>Total cost:</p>
+        <p id="Total_price"></p>
+    </div>
+    
+    <script>
+    function Calculate () {
+        const Petrol_price = document.getElementById('Petrol_price').value;
+        const Petrol_liter= document.getElementById('Petrol_liter').value;
+    
+        if (!Petrol_price || !Petrol_liter) {
+            document.getElementById('Total_price').innerText = Petrol_price * Petrol_liter;
+            return;
+        }
+    
+        const totalCost = Petrol_price * Petrol_liter;
+        document.getElementById('Total_price').innerText = totalCost.toFixed(2);
+    }
+    </script>
+    
+</body>
+</html>
